@@ -56,7 +56,8 @@
 .header_img {
   width: 150px;
   height: 150px;
-  background-image:url(http://placehold.it/150);
+  background-image:url(https://dspncdn.com/a1/media/692x/80/e8/78/80e878da2963e18ebc58c1a19c1d0c1e.jpg);
+  background-size: cover;
   border-radius: 100%;
   border: 10px solid #d7d7d7;
   margin: 0 auto;
@@ -83,6 +84,10 @@ footer {
 }
 
 /* STANDARD CONTENT STYLING */
+body {
+  background-color: #e7e7e7;
+}
+
 .content {
   max-width: 75%;
   margin: 0 auto;
@@ -93,7 +98,14 @@ footer {
 }
 
 article {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.box{
+  box-model: border-box;
+  border-right: 10px solid transparent;
+  background-clip:padding-box;
 }
 
 /* INDEX PAGE STYLING */
@@ -141,4 +153,59 @@ article {
 }
 .languages {
   max-width: 100%;
+}
+
+/* CODING PORTFOLIO PAGE STYLING */
+.code-preview-bg {
+  max-width: 370px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.code-preview-fg {
+  max-width: 370px;
+  text-align: justify;
+}
+.code-preview-fg .caption {
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  text-align: justify;
+}
+.code-preview-fg .caption b {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.code-preview-fg img {
+  max-width: 100%;
+}
+
+/* GRAPHIC DESIGN PORTFOLIO PAGE STYLING */
+.gd-preview-bg {
+  max-width: 260px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.gd-preview-fg {
+  max-width: 260px;
+}
+.gd-preview-fg img {
+  max-width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: red;
+    /* TODO: take this out before finalizing. this is only for testing */
+  }
+
+  .box {
+      box-model: border-box;
+      border: 0px solid transparent;
+      background-clip:padding-box;
+  }
 }
