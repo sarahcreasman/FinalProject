@@ -157,14 +157,14 @@ article {
 
 /* CODING PORTFOLIO PAGE STYLING */
 .code-preview-bg {
-  max-width: 370px;
+  max-width: 100%;
   background-color: #fff;
   margin-bottom: 10px;
   padding: 10px;
 }
 
 .code-preview-fg {
-  max-width: 370px;
+  max-width: 100%;
   text-align: justify;
 }
 .code-preview-fg .caption {
@@ -183,18 +183,86 @@ article {
 
 /* GRAPHIC DESIGN PORTFOLIO PAGE STYLING */
 .gd-preview-bg {
-  max-width: 260px;
+  max-width: 100%;
   background-color: #fff;
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .gd-preview-fg {
-  max-width: 260px;
+  max-width: 100%;
 }
 .gd-preview-fg img {
   max-width: 100%;
 }
+
+/* CONTACT PAGE STYLING */
+label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+form {
+  width:100%;
+  margin:auto;
+  position:relative;
+}
+
+input {
+  width:100%;
+  margin-bottom: 3px;
+}
+
+select {
+  width:100%;
+  margin-bottom: 3px;
+}
+
+textarea {
+  width:100%;
+  height: 100px;
+  margin-bottom: 3px;
+}
+
+.social a {
+  color: #000;
+  text-decoration: none;
+}
+
+.social-icon {
+  font-size: 36px;
+}
+
+.social-label {
+  font-size: 14px;
+}
+
+.form-box {
+  margin-bottom: 50px;
+}
+.contact-form {
+  padding: 15px;
+}
+
+.form-input {
+  padding: 5px;
+}
+
+.form-button {
+  max-width: 150px;
+  margin-right: 5px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Overpass Mono', monospace;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 500px) {
