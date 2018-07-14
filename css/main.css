@@ -56,7 +56,7 @@
 .header_img {
   width: 150px;
   height: 150px;
-  background-image:url(https://dspncdn.com/a1/media/692x/80/e8/78/80e878da2963e18ebc58c1a19c1d0c1e.jpg);
+  background-image:url(https://vignette.wikia.nocookie.net/mlp/images/e/e5/Tempest_Shadow_ID_MLPTM.png);
   background-size: cover;
   border-radius: 100%;
   border: 10px solid #d7d7d7;
@@ -106,6 +106,18 @@ article {
   box-model: border-box;
   border-right: 10px solid transparent;
   background-clip:padding-box;
+}
+
+.portfolio-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.portfolio-text b {
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 /* INDEX PAGE STYLING */
@@ -178,7 +190,14 @@ article {
   text-transform: uppercase;
 }
 .code-preview-fg img {
+  width: 450px;
   max-width: 100%;
+}
+
+.code-intro {
+  max-width: 100%;
+  padding: 10px;
+  text-align: justify;
 }
 
 /* GRAPHIC DESIGN PORTFOLIO PAGE STYLING */
@@ -193,7 +212,14 @@ article {
   max-width: 100%;
 }
 .gd-preview-fg img {
+  width: 333px;
   max-width: 100%;
+}
+
+.graphic-intro {
+  max-width: 100%;
+  padding: 10px;
+  text-align: justify;
 }
 
 /* CONTACT PAGE STYLING */
@@ -265,7 +291,71 @@ textarea {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 991px) {
+  body {
+    background-color: blue;
+    /* TODO: take this out before finalizing. this is only for testing */
+  }
+
+  .box {
+      box-model: border-box;
+      border: 0px solid transparent;
+      background-clip:padding-box;
+  }
+
+  .code-preview-bg {
+    width: 450px;
+    max-width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .gd-preview-bg {
+    width: 333px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .graphic-intro {
+    width: 333px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .code-intro {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background-color: orange;
+    /* TODO: take this out before finalizing. this is only for testing */
+  }
+
+  .header_bg {
+    height: 125px;
+  }
+
+  .header_img {
+    margin-top: -90px;
+  }
+  .navi_title {
+    font-size: 16px;
+  }
+  .navi_menu li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 525px) {
   body {
     background-color: red;
     /* TODO: take this out before finalizing. this is only for testing */
@@ -275,5 +365,9 @@ textarea {
       box-model: border-box;
       border: 0px solid transparent;
       background-clip:padding-box;
+  }
+
+  .form-button {
+    max-width: 65px;
   }
 }
