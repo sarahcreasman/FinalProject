@@ -62,7 +62,7 @@
   border: 10px solid #d7d7d7;
   margin: 0 auto;
   margin-top: -120px;
-  z-index: 99;
+  z-index: 2;
   position: relative;
 }
 
@@ -198,6 +198,14 @@ article {
   font-size: 14px;
   text-transform: uppercase;
 }
+.code-preview-fg .caption a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 10px;
+  font-weight: bold;
+}
 .code-preview-fg img {
   width: 450px;
   max-width: 100%;
@@ -207,6 +215,81 @@ article {
   max-width: 100%;
   padding: 10px;
   text-align: justify;
+}
+
+/* CODE PAGE LIGHTBOX CONTENTS STYLING */
+.portfolio_pop {
+  max-width: 650px;
+  height: 340px;
+  padding: 10px;
+  background-color: #d2d2d2;
+}
+
+.portfolio_pop .row {
+  max-width: 95%;
+  top: 5px;
+  margin: 0 auto;
+}
+
+.portfolio_title {
+  text-align:center;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  text-transform:uppercase;
+}
+.portfolio_image {
+  width: 100%;
+  border: 5px solid #fff;
+}
+.portfolio_image img {
+  max-width: 100%;
+}
+
+.portfolio_lang {
+  background-color: #e1e1e1;
+  border: 5px solid #fff;
+  padding: 5px;
+}
+.portfolio_lang_title {
+  text-align:center;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform:uppercase;
+}
+.portfolio_lang_text {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Overpass Mono', monospace;
+  text-transform:uppercase;
+  color: #000;
+}
+.portfolio_about {
+  background-color: #e1e1e1;
+  border: 5px solid #fff;
+  padding: 5px;
+}
+.portfolio_about_title {
+  text-align:center;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform:uppercase;
+}
+.portfolio_about_text {
+  text-align: justify;
+  font-size: 10px;
+  font-family: 'Overpass Mono', monospace;
+  color: #000;
+}
+.portfolio_about_text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
 }
 
 /* GRAPHIC DESIGN PORTFOLIO PAGE STYLING */
@@ -301,6 +384,30 @@ textarea {
   font-size: 12px;
 }
 
+/* POP UP BOX */
+.modal-content {
+	display: none;
+}
+
+#fade-background {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	z-index: 3;
+}
+#modal-window {
+	position: fixed;
+	top: 64px;
+	left: 50%;
+	max-width: 860px;
+	background-color: #F9F9F9;
+	margin: 0 0 0 -430px;
+	z-index: 3;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {

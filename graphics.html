@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
   <title>Sarah Creasman Codes</title>
 </head>
@@ -29,7 +31,7 @@
   </header>
 
   <div class="content">
-    <div class="row">
+		<div class="row">
 
       <article class="graphic-intro col-md-12 box">
         <div class="section_title">graphic design</div>
@@ -39,43 +41,36 @@
 
       <div class="gd-preview-bg col-md-3 box">
         <div class="gd-preview-fg">
-          <img src="img/blue_eyes.png" alt="Black and White Picture of a Woman with blue eyes colored in">
+          <a href="#" class="modal-link" data-modal-target="blue_eyes"><img src="img/blue_eyes_sm.png"></a>
         </div>
       </div>
 
       <div class="gd-preview-bg col-md-3 box">
         <div class="gd-preview-fg">
-          <img src="img/cosima.png">
+          <a href="#" class="modal-link" data-modal-target="cosima"><img src="img/cosima_sm.png"></a>
         </div>
       </div>
 
       <div class="gd-preview-bg col-md-3 box">
         <div class="gd-preview-fg">
-          <img src="img/daycare.png">
+          <a href="#" class="modal-link" data-modal-target="daycare"><img src="img/daycare_sm.png"></a>
         </div>
       </div>
 
       <div class="gd-preview-bg col-md-3 box">
         <div class="gd-preview-fg">
-          <img src="img/happydinoad.png">
-        </div>
-      </div>
-
-      <div class="gd-preview-bg col-md-3 box">
-        <div class="gd-preview-fg">
-          <img src="img/hogwarts.png">
-        </div>
-      </div>
-
-      <div class="gd-preview-bg col-md-3 box">
-        <div class="gd-preview-fg">
-          <img src="img/supergirl.png">
+          <a href="#" class="modal-link" data-modal-target="supergirl"><img src="img/supergirl_sm.png"></a>
         </div>
       </div>
 
     </div>
-
   </div>
+
+  <!-- POP UP CONTENTS -->
+  <div id="blue_eyes" class="modal-content"><img src="img/blue_eyes.png" style="max-width:860px"></div>
+  <div id="cosima" class="modal-content"><img src="img/cosima.png" style="max-width:860px"></div>
+  <div id="daycare" class="modal-content"><img src="img/daycare.png" style="max-width:860px"></div>
+  <div id="supergirl" class="modal-content"><img src="img/supergirl.png" style="max-width:860px"></div>
 
   <footer>
     &copy; Sarah Creasman 2018
