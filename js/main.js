@@ -21,3 +21,33 @@ $(document).ready(function() {
 		}
 	});
 });
+
+/* VALIDATES INFORMATION IN CONTACT FORM */
+document.getElementById("contact_form").addEventListener("submit", function(e) {
+	e.preventDefault();
+	checkForm();
+});
+
+function checkForm() {
+	var name = document.getElementById("input_name").value;
+	var email = document.getElementById("input_email").value;
+	var subject = document.getElementById("input_subject").value;
+	var comments = document.getElementById("input_comments").value;
+
+	if (name == "") {
+		alert("Name is a required field.");
+		return false;
+	}
+	if (email == "") {
+		alert("Email Address is a required field.");
+		return false;
+	}
+	if (subject == "") {
+		alert("Subject is a required field.");
+		return false;
+	}
+	if (comments == "") {
+		alert("Comments is a required field.");
+		return false;
+	}
+}
