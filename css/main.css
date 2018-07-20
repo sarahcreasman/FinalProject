@@ -14,14 +14,14 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #868670;
   transform: skewY(-3deg);
   transform-origin: top left;
 }
 
 .navigation {
   max-width:100%;
-  background-color: #000;
+  background-color: #868670;
   color: #fff;
   padding: 10px;
   display: flex;
@@ -31,7 +31,8 @@
 .navi_title {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  font-size: 18px;
+  text-shadow: 1px 1px #535353;
+  font-size: 24px;
   flex-grow: 1;
 }
 .navi_title a {
@@ -46,7 +47,8 @@
   padding-right: 15px;
   font-family: 'Oswald', sans-serif;
   text-transform:uppercase;
-  font-size: 18px;
+  font-size: 24px;
+  text-shadow: 1px 1px #535353;
   flex-grow: 1;
 }
 .navi_menu a {
@@ -56,10 +58,10 @@
 .header_img {
   width: 150px;
   height: 150px;
-  background-image:url(https://vignette.wikia.nocookie.net/mlp/images/e/e5/Tempest_Shadow_ID_MLPTM.png);
+  background-image:url("../img/sarah.png");
   background-size: cover;
   border-radius: 100%;
-  border: 10px solid #d7d7d7;
+  border: 10px solid #fff;
   margin: 0 auto;
   margin-top: -120px;
   z-index: 2;
@@ -74,10 +76,11 @@ footer {
   left: 0;
   right: 0;
   z-index: 0;
-  background-color: #000;
+  background-color: #868670;
   padding: 10px;
   color: #fff;
   font-family: 'Overpass Mono', monospace;
+  text-shadow: 1px 1px #535353;
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
@@ -335,30 +338,6 @@ form {
   padding: 25px;
 }
 
-.social_media {
-  max-width: 50%;
-}
-
-.social_media_title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.sm_list {
-  display: inline-block;
-}
-
-.sm_item {
-  display: inline-block;
-  font-size: 36px;
-  color: #000;
-}
-
-.sm_item a {
-  color: #000;
-}
-
 /* POP UP BOX */
 .modal-content {
 	display: none;
@@ -385,23 +364,27 @@ form {
 }
 
 /* BOOTSTRAP CUSTOMIZATIONS */
-.badge {
-  padding: 5px;
-  text-align: center;
-  width: 90px;
-  font-family: 'Oswald', sans-serif;
+.list-group-item-dark {
+  background-color:rgba(134,134,112,0.1);
+}
+
+.btn-dark {
+  background-color: #868670;
+  border: 0px;
+  font-family: 'Overpass Mono', monospace;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: normal;
+  color: #fff;
+  text-shadow: 1px 1px #535353;
+  letter-spacing: 1px;
+}
+
+.btn-dark:hover {
+  background-color: #868670;
 }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
-  body {
-    background-color: blue;
-    /* TODO: take this out before finalizing. this is only for testing */
-  }
-
   .box {
       box-model: border-box;
       border: 0px solid transparent;
@@ -440,11 +423,6 @@ form {
 }
 
 @media screen and (max-width: 650px) {
-  body {
-    background-color: orange;
-    /* TODO: take this out before finalizing. this is only for testing */
-  }
-
   .header_bg {
     height: 125px;
   }
@@ -461,11 +439,6 @@ form {
 }
 
 @media screen and (max-width: 525px) {
-  body {
-    background-color: red;
-    /* TODO: take this out before finalizing. this is only for testing */
-  }
-
   .box {
       box-model: border-box;
       border: 0px solid transparent;

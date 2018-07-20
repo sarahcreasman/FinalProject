@@ -33,21 +33,25 @@ function checkForm() {
 	var email = document.getElementById("input_email").value;
 	var subject = document.getElementById("input_subject").value;
 	var comments = document.getElementById("input_comments").value;
+	var alert_message = "Please provide the following information: ";
 
 	if (name == "") {
-		alert("Name is a required field.");
-		return false;
+		alert("Please enter your name!")
 	}
+
 	if (email == "") {
-		alert("Email Address is a required field.");
-		return false;
+		alert("Please enter your email address!")
 	}
+
 	if (subject == "") {
-		alert("Subject is a required field.");
-		return false;
+		alert("Please enter your subject!");
 	}
+
 	if (comments == "") {
-		alert("Comments is a required field.");
-		return false;
+		alert("Please enter your comments!");
+	}
+
+	if ((name != "") && (email != "") && (subject != "") && (comments != "")) {
+		alert("Form submitted successfully!")
 	}
 }
