@@ -46,6 +46,6 @@ is valid, this function alerts the user that the form has been submitted correct
 
 ## Future Plans
 ```
-In the future, I plan to add PHP form handling so that the form will actually send. I also plan on adding more to
-both the coding and graphic design portfolios. 
+In the future, I plan to add PHP form handling so that the form will actually send. I also plan on adding more
+to both the coding and graphic design portfolios. 
 ```
