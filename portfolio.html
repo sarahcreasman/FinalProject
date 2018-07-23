@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+
+  <!-- STYLESHEETS -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Overpass+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+  <!-- NAVIGATION BAR AND HEADER -->
   <header>
     <div class="navigation">
       <div class="navi_title"><a href="index.html">Sarah Creasman Codes</a></div>
@@ -28,6 +30,7 @@
     <div class="header_img"></div>
   </header>
 
+<!-- PAGE CONTENT -->
   <div class="content">
     <div class="row">
 
@@ -37,6 +40,7 @@
           <p class="portfolio-text"><b>Last Updated:</b> July 9, 2018</p>
       </article>
 
+<!-- PORTFOLIO CONTENTS -->
       <div class="code-preview-bg col-md-4 box">
         <div class="code-preview-fg">
           <a href="#" class="modal-link" data-modal-target="write_stuff"><div class="caption"><img src="img/write_stuff_logo.png"></a>
@@ -45,12 +49,22 @@
         </div>
       </div>
 
+<!-- ADD NEW PORTFOLIO CONTENTS -->
+<!--
+<div class="code-preview-bg col-md-4 box">
+  <div class="code-preview-fg">
+    <a href="#" class="modal-link" data-modal-target=MODAL_TARGET"><div class="caption"><img src="img/IMAGE.png"></a>
+    <center><b>PROJECT NAME</b></center>
+      ABOUT THE PROJECT <a href="https://github.com/sarahcreasman/GITLINK">[GIT HUB]</a></div>
+  </div>
+</div>
+-->
+
     </div>
 
   </div>
 
-  <!-- LIGHTBOX CONTENTS -->
-  <!-- WRITE STUFF DETAILS -->
+  <!-- WRITE STUFF LIGHTBOX -->
 
   <div id="write_stuff" class="modal-content">
     <div class="portfolio_pop">
@@ -70,10 +84,33 @@
   </div>
   </div>
 
+  <!-- CREATE A NEW LIGHTBOX -->
+  <!--
+  <div id="MODAL_TARGET" class="modal-content">
+    <div class="portfolio_pop">
+      <div class="portfolio_title">PROJECT TITLE</div>
+      <div class="row">
+      <div class="portfolio_image col-sm-4 box"><img src="img/IMAGE"></div>
+      <div class="portfolio_image col-sm-4 box"><img src="img/IMAGE"></div>
+      <div class="portfolio_image col-sm-4"><img src="img/IMAGE"></div>
+      <div class="portfolio_lang col-sm-6 box"><div class="portfolio_lang_title">languages</div>
+        <div class="portfolio_lang_text">LANGUAGES USED</div>
+      </div>
+      <div class="portfolio_about col-sm-6"><div class="portfolio_about_title">about</div>
+        <div class="portfolio_about_text">CODE SUMMARY [<a href="https://github.com/sarahcreasman/GITLINK">git link</a>]</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  -->
+
+<!-- FOOTER -->
   <footer>
     &copy; Sarah Creasman 2018
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
   </footer>
+
+<!-- JAVASCRIPT STYLESHEETS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
