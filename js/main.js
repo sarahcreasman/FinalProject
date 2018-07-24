@@ -1,9 +1,9 @@
 /* CREATES THE LIGHTBOX */
-$(document).ready(function() {
+$(function() {
 	var fadeBackground = $(document.createElement("div")).hide().attr("id", "fade-background"),
 	modalWindow = $(document.createElement("div")).hide().attr("id", "modal-window");
-	$(document.body).append(fadeBackground, modalWindow);
-	$(document).on("click", ".modal-link", function(e) {
+	$("body").append(fadeBackground, modalWindow);
+	$(".modal-link").click(function(e) {
 		$("#fade-background").css({ "opacity": "0.75" }).fadeIn("fast");
                 var newContents = $("#" + $(this).data("modal-target")).html();
                 $("#modal-window").html(newContents);
@@ -33,7 +33,6 @@ function checkForm() {
 	var email = document.getElementById("input_email").value;
 	var subject = document.getElementById("input_subject").value;
 	var comments = document.getElementById("input_comments").value;
-	var alert_message = "Please provide the following information: ";
 
 	if (name == "") {
 		alert("Please enter your name!")
@@ -55,3 +54,22 @@ function checkForm() {
 		alert("Form submitted successfully!")
 	}
 }
+
+/* JQUERY FORM TEST */
+// $("#btn_submit").click(function(){
+// 	var  test = "";
+// 	var message = "Please enter your ";
+// 	$("form input, textarea").each(function(e) {
+//
+//
+// 		if ($(this).val() == "") {
+// 			test += $(this).attr("title") + " ";
+// 		}
+// 		else {
+// 			message = "Form submitted successfully";
+// 		}
+// 		// debugger;
+// 	})
+//
+// 	console.log(message + " " + test);
+// })
