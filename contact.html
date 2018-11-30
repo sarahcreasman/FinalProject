@@ -29,9 +29,15 @@
     <div class="header_img"></div>
   </header>
 
+  <!-- NOTE: Form does not go to an email due to no backend server attached to this site. -->
   <div class="content">
     <article>
-      <form name="contact_form" id="contact_form" method="post">
+      <form
+        action="mailto:sarah.creasman@yahoo.com"
+        name="contact_form"
+        id="contact_form"
+        method="post"
+        enctype="multipart/form-data">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="input_name">Name</label>
@@ -57,8 +63,6 @@
       </form>
     </article>
   </div>
-
-<!-- TODO: add php form handling for email -->
 
   <footer>
     &copy; Sarah Creasman 2018
